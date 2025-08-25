@@ -2,6 +2,6 @@
 import subprocess
 
 def test_output():
-    result = subprocess.run(["python", "assignment.py"], capture_output=True, text=True)
+    result = subprocess.run(["python", "check.py"], capture_output=True, text=True)
     output = result.stdout.strip()
     assert output == "Hello, world!"   # expected output
